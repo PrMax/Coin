@@ -36,7 +36,7 @@
                                         <color key="textColor" name="Title Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLe-VT-QTH">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLe-VT-QTH">
                                         <rect key="frame" x="10" y="85" width="394" height="80"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9hd-b5-8T1">
@@ -76,12 +76,13 @@
                                             <constraint firstAttribute="height" constant="80" id="hMy-6q-gWm"/>
                                             <constraint firstItem="9hd-b5-8T1" firstAttribute="leading" secondItem="wLe-VT-QTH" secondAttribute="leading" id="z7j-9N-H9b"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="wLe-VT-QTH" secondAttribute="trailing" constant="10" id="X06-eQ-KL5"/>
-                                    <constraint firstAttribute="bottom" secondItem="wLe-VT-QTH" secondAttribute="bottom" id="kw3-of-3Is"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xwb-HC-pQu"/>
